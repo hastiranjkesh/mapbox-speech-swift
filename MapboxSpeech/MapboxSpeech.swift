@@ -143,6 +143,8 @@ open class SpeechSynthesizer: NSObject {
         
         var request = URLRequest(url: url)
         request.setValue(userAgent, forHTTPHeaderField: "User-Agent")
+        request.setValue("Basic S1BDeXpIU2xud1pIOjIqPX0mSDIzfj9KQyR2KFE=", forHTTPHeaderField: "Authorization")
+        
         let task = URLSession.shared.dataTask(with: request as URLRequest) { (data, response, error) in
             
             // Parse error object
