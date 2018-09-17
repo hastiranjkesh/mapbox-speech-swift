@@ -93,7 +93,8 @@ open class SpeechSynthesizer: NSObject {
         
         var baseURLComponents = URLComponents()
         baseURLComponents.scheme = "https"
-        baseURLComponents.host = host ?? "api.mapbox.com"
+//         baseURLComponents.host = host ?? "api.mapbox.com"
+        baseURLComponents.host = host ?? "raah.ir"
         self.apiEndpoint = baseURLComponents.url!
     }
     
